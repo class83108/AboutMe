@@ -41,8 +41,8 @@
 # the copyright notice. Configure as per the main menu above.
 
 [[footer]]
-  name = "分類"
-  pageRef = "CATEGORIES"
+  name = "CATEGORIES"
+  pageRef = "categories"
   weight = 10
 
 [[footer]]

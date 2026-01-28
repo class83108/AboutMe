@@ -1,32 +1,31 @@
 disabled = false
 languageCode = "en"
 languageName = "English"
-weight = 1
-title = "Blowfish"
+weight = 2
+title = "AboutMe"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
+  # logo = "img/favicon.ico"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
    name = "Eason Chuang"
-#   email = "youremail@example.com"
-#   image = "img/hugo_avatar.jpg"
-#   imageQuality = 96
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
-#     { link = "https://link-to-some-website.com/" },
+   email = "class83108@gmail.com"
+   image = "img/hugo_avatar.jpg"
+   imageQuality = 96
+   headline = "I'm a software engineer who love to explore the world"
+   bio = "A little bit about you"
+   links = [
+     { email = "class83108@gmail.com" },
+     { blogger = "https://ithelp.ithome.com.tw/users/20161866" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
-#     { blogger = "https://username.blogspot.com/" },
 #     { bluesky = "https://bsky.app/profile/username" },
 #     { codepen = "https://codepen.io/username" },
 #     { dev = "https://dev.to/username" },
@@ -35,7 +34,7 @@ title = "Blowfish"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/username" },
+     { github = "https://github.com/class83108" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
@@ -73,4 +72,4 @@ title = "Blowfish"
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
-#   ]
+   ]

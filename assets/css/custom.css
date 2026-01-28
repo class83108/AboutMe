@@ -1,4 +1,40 @@
 
+:root {
+/* Claude-inspired color palette */
+--color-neutral: 255, 255, 255;
+--color-neutral-50:     253,251,247;  /* 温暖的米白色 */
+--color-neutral-100:    250,247,241;
+--color-neutral-200:    60,50,40;     /* 深色，在 light mode 下可见 */
+--color-neutral-300:    85,72,58;     /* 深色，在 light mode 下可见 */
+--color-neutral-400:    165,150,130;
+--color-neutral-500:    120,105,88;
+--color-neutral-600:    85,72,58;
+--color-neutral-700:    60,50,40;
+--color-neutral-800:    40,33,26;
+--color-neutral-900:    25,20,16;
+/* Claude 标志性橙棕色调 */
+--color-primary-50:     254,249,243;
+--color-primary-100:    253,242,232;
+--color-primary-200:    251,227,207;
+--color-primary-300:    246,203,170;
+--color-primary-400:    235,163,121;
+--color-primary-500:    204,120,92;   /* Claude 主色 */
+--color-primary-600:    180,95,65;
+--color-primary-700:    150,75,48;
+--color-primary-800:    115,55,35;
+--color-primary-900:    80,38,23;
+/* 温暖的辅助色调 */
+--color-secondary-50:     252,248,243;
+--color-secondary-100:    247,239,229;
+--color-secondary-200:    237,223,206;
+--color-secondary-300:    219,197,172;
+--color-secondary-400:    186,158,128;
+--color-secondary-500:    145,120,95;
+--color-secondary-600:    110,88,68;
+--color-secondary-700:    80,63,48;
+--color-secondary-800:    55,43,33;
+--color-secondary-900:    35,28,21;
+}
 /* Claude-inspired gradient background */
 body::before {
   content: '';
@@ -8,33 +44,38 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.25;
+  opacity: 0.2;
   pointer-events: none;
   background:
-    radial-gradient(circle at 20% 30%, rgba(212, 130, 106, 0.7) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(139, 158, 170, 0.7) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(203, 103, 74, 0.5) 0%, transparent 55%);
+    radial-gradient(circle at 20% 30%, rgba(204, 120, 92, 0.6) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(235, 163, 121, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(191, 101, 69, 0.4) 0%, transparent 55%);
   background-size: 100% 100%;
   background-position: 0% 0%;
-  animation: subtle-gradient 5s ease-in-out infinite;
+  animation: subtle-gradient 8s ease-in-out infinite;
 }
 
 @keyframes subtle-gradient {
   0%, 100% {
     transform: scale(1) rotate(0deg);
-    opacity: 0.25;
+    opacity: 0.2;
   }
   50% {
     transform: scale(1.1) rotate(3deg);
-    opacity: 0.35;
+    opacity: 0.3;
   }
 }
 
 /* Dark mode support */
+.dark {
+  --color-neutral-200:    242,237,227;  /* 浅色，在 dark mode 下可见 */
+  --color-neutral-300:    220,210,195;  /* 浅色，在 dark mode 下可见 */
+}
+
 .dark body::before {
-  opacity: 0.3;
+  opacity: 0.25;
   background:
-    radial-gradient(circle at 20% 30%, rgba(203, 103, 74, 0.8) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(115, 138, 153, 0.8) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(183, 82, 53, 0.6) 0%, transparent 55%);
+    radial-gradient(circle at 20% 30%, rgba(191, 101, 69, 0.7) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(204, 120, 92, 0.6) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(168, 82, 50, 0.5) 0%, transparent 55%);
 }
