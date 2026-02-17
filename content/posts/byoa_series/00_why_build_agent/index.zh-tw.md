@@ -68,4 +68,4 @@ Github: https://github.com/class83108/Bring-Your-Own-Agent
 
 PYPI: https://pypi.org/project/byoa-core/
 
-架構圖: ![架構圖](architecture.png)
+架構圖: ![架構圖](featured.png)
