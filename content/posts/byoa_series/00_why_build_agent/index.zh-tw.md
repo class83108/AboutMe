@@ -21,7 +21,7 @@ series = ["Bring Your Own Agent"]
 
 現在 Claude Code、Cursor、Codex，能寫程式的強力 Agent 滿天飛。什麼都有了，為什麼還要自己建？
 
-前面提到了，原本的初心是要用學習的角度出發，所以一開始是參考 [Geoffrey Huntley 的文章)](https://ghuntley.com/agent/)，打算就依照文中的架構做一個 python 版的 coding agent。
+前面提到了，原本的初心是要用學習的角度出發，所以一開始是參考 [Geoffrey Huntley 的文章](https://ghuntley.com/agent/)，打算就依照文中的架構做一個 python 版的 coding agent。
 
 但真的做下去，開始思考整個 agent 的運作流程之後，才發現原來有那麼多細節可以探討。並且開始思考平常自己使用最多的 Claude Code 是怎麼做的，或是去看 claude 官方的 [部落格](https://www.anthropic.com/engineering) 的相關文章。**與其說是要做一個產品，更精確地來說是在做產品的過程中去搞懂它**。
 
