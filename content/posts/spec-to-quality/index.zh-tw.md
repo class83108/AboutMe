@@ -57,14 +57,7 @@ tags = ["Claude Code", "TDD", "Gherkin", "Skills", "AI x 人共同寫作"]
 
 核心概念很單純：把我的開發流程拆成 6 個 Claude Code skill，用前置條件串起來，強制按順序走。
 
-```mermaid
-flowchart LR
-    A[ec:feature-coverage] --> B[ec:gherkin]
-    B --> C[ec:tdd-workflow]
-    C --> D[ec:design-review]
-    D --> E[ec:pre-complete]
-    F[ec:debugging] -.-> |任何階段| A & B & C & D & E
-```
+![spec-to-quality 流程](featured.png)
 
 | Skill | 做什麼 |
 |-------|--------|
