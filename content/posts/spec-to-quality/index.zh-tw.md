@@ -1,7 +1,7 @@
 +++
 date = '2026-03-19T12:00:00+08:00'
 draft = false
-title = '從開發流程的斷裂到 Claude Code Skills — spec-to-quality 的由來'
+title = '靠 Skills 補齊從需求到程式碼之間遺失的資訊'
 categories = ["AI", "Software Engineering"]
 tags = ["Claude Code", "TDD", "Gherkin", "Skills", "AI x 人共同寫作"]
 +++
