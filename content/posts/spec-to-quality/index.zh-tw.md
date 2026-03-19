@@ -41,7 +41,7 @@ tags = ["Claude Code", "TDD", "Gherkin", "Skills", "AI x 人共同寫作"]
 
 但還是在這時候又開始遇到一些問題。
 
-首先是 **Gherkin 到底要寫多細？** 老實說如果直接跳過最全局觀的文檔開始寫 Gherkin，很容易太發散，或是寫太多細節導致 `.feature` 檔根本沒人要看。至於 Gherkin 與測試程式碼之間要一比一這件事，後來有發現 pytest-bdd 這個工具可以做到所以就不多提了。
+首先是初始文檔的問題。要怎麼寫一份需求端看得懂、同時又保留技術實踐方向的文檔？這部分我是參考了 [Design Docs at Google](https://www.industrialempathy.com/posts/design-docs-at-google/) 的做法，但即使文檔本身寫好了，接下來 **Gherkin 到底要寫多細？** 又是另一個問題。老實說如果直接跳過最全局觀的文檔開始寫 Gherkin，很容易太發散，或是寫太多細節導致 `.feature` 檔根本沒人要看。至於 Gherkin 與測試程式碼之間要一比一這件事，後來有發現 pytest-bdd 這個工具可以做到所以就不多提了。
 
 更大的問題是，直接跟 agent 聊天開始寫 Gherkin 時，因為初始文檔可能有太多技術細節需要腦補，如果是我自己也很缺乏經驗的需求開發，我也很容易漏掉 edge case，然後又是等手動驗收時才會發現有問題。又或者是這樣的流程下來，**Gherkin 太多太細**連我自己都漏掉某些需求，**導致整個流程節點到節點之間可能會有資訊的丟失**，很難第一時間就注意到。
 
@@ -51,7 +51,7 @@ tags = ["Claude Code", "TDD", "Gherkin", "Skills", "AI x 人共同寫作"]
 
 既然現在每個節點需要的工具都有了——從文檔端的 OpenSpec、到行為規格的 Gherkin + pytest-bdd、到實際把關程式碼的 ruff 和 pyright 等等都有了——那剩下的就是如何讓 AI agent 每次都按照這個流程開發。
 
-於是就有了這個 skill。
+不過我沒有馬上就做成 skill，而是先按照這個流程手動開發了幾次，確認每個節點的工具都能穩定配合。會決定 skill 化是看了 [Boris Cherny 的專訪](https://www.youtube.com/watch?v=julbw1JuAz0&t=1838s)，他提到遇到重複的問題就該自動化。既然流程已經跑順了，那就把它包起來吧。
 
 ## spec-to-quality 在做什麼
 
